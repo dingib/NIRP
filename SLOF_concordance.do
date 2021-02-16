@@ -114,15 +114,25 @@ gen clinicians=cg_group==3
 foreach dim in a b c d e f {
 	ren slof_cg_totale_`dim' cg`dim'
 	ren slof_pz_totale_`dim' pz`dim'
+	label var cg`dim' "Total score by caregivers on SLOF dimension `dim'"
+	label var pz`dim' "Total score by patients on SLOF dimension `dim'"
 	}
 	
 *** computes the differences between patient and caregiver (diff_*) on the same dimension and the mean of patient's and caregiver's score
 foreach dim in a b c d e f {
 	gen diff_`dim' = pz`dim' - cg`dim'
 	gen mean_`dim' = (cg`dim' + pz`dim')/2
+	label var diff_`dim' "Patient-caregiver difference on SLOF dimension `dim'"
+	label var mean_`dim' "Mean of Patient and caregiver scores on SLOF dimension `dim'"
 	}
 
 **** END OF DATA LOADING AND CLEANING
+*------------------------------------
+
+*------------------------------------
+**** DATA ANALYSIS
+*** Before running these analyses, users should install from SSC the following packages: conovertest, kappaetc, somersd, scsomersd
+
 
 *** summarises the SLOF items separately by patient and caregiver. Grouping variables by SLOF dimension
 summ slof*a_*
@@ -161,7 +171,7 @@ foreach var of varlist eta scolarita BNSS_apa BNSS_app PANSS_pos PANSS_dis cdss_
 		oneway `var' cg_group, tabulate
 	}
 	
-*** as before, adding posthoc analyses only for variables significant at ANOVA
+*** as before, adding posthoc analyses only for variables significant at the ANOVA
 foreach var of varlist eta scolarita BNSS_app PANSS_dis mccb_hvlt_r_totale mccb_nab mccb_bvmt_r_totale cpt_ip_totale wrk_mem FEIT TASIT2 TASIT3 MSCEIT upsa_b_totale {
 		oneway `var' cg_group, scheffe
 	}
