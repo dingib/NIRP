@@ -1,0 +1,173 @@
+-------------------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/dinogibertoni/WORK/NIRP/FOLLOW-UP/SLOF pazienti-caregivers/codebook.log
+  log type:  text
+ opened on:  16 Feb 2021, 17:52:00
+
+. describe
+
+Contains data
+  obs:           618                          
+ vars:           147                          
+ size:       176,748                          
+-------------------------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+-------------------------------------------------------------------------------------------------------------
+Soggetto        str12   %12s                  
+cg_group        float   %15.0g     cg         
+Caregiver       str33   %33s                  Caregiver
+genere          str1    %9s                   
+eta             float   %9.0g                 
+recovered       double  %12.0g                
+PANSS_pos       float   %9.0g                 
+PANSS_dis       float   %9.0g                 
+cdss_totale     byte    %8.0g                 
+mccb_tmt        int     %8.0g                 
+mccb_bacs_sc    byte    %8.0g                 
+mccb_hvlt_r_t~e byte    %8.0g                 
+mccb_wms_iii    byte    %8.0g                 
+mccb_lns        byte    %8.0g                 
+mccb_nab        byte    %8.0g                 
+mccb_bvmt_r_t~e byte    %8.0g                 
+mccb_fluenza    byte    %8.0g                 
+cpt_ip_totale   float   %9.0g                 
+upsa_b_totale   float   %9.0g                 
+slof_pz_c_13    byte    %8.0g                 
+slof_pz_c_14    byte    %8.0g                 
+slof_pz_c_15    byte    %8.0g                 
+slof_pz_c_16    byte    %8.0g                 
+slof_pz_c_17    byte    %8.0g                 
+slof_pz_c_18    byte    %8.0g                 
+slof_pz_c_19    byte    %8.0g                 
+slof_pz_e_27    byte    %8.0g                 
+slof_pz_e_28    byte    %8.0g                 
+slof_pz_e_29    byte    %8.0g                 
+slof_pz_e_30    byte    %8.0g                 
+slof_pz_e_31    byte    %8.0g                 
+slof_pz_e_32    byte    %8.0g                 
+slof_pz_e_33    byte    %8.0g                 
+slof_pz_e_34    byte    %8.0g                 
+slof_pz_e_35    byte    %8.0g                 
+slof_pz_e_36    byte    %8.0g                 
+slof_pz_e_37    byte    %8.0g                 
+slof_pz_f_38    byte    %8.0g                 
+slof_pz_f_39    byte    %8.0g                 
+slof_pz_f_40    byte    %8.0g                 
+slof_pz_f_41    byte    %8.0g                 
+slof_pz_f_42    byte    %8.0g                 
+slof_pz_f_43    byte    %8.0g                 
+pza             byte    %8.0g                 Total score by patients on SLOF dimension a
+pzb             byte    %8.0g                 Total score by patients on SLOF dimension b
+pzc             byte    %8.0g                 Total score by patients on SLOF dimension c
+pzd             byte    %8.0g                 Total score by patients on SLOF dimension d
+pze             byte    %8.0g                 Total score by patients on SLOF dimension e
+pzf             byte    %8.0g                 Total score by patients on SLOF dimension f
+slof_pz_a_1     byte    %8.0g                 
+slof_pz_a_2     byte    %8.0g                 
+slof_pz_a_3     byte    %8.0g                 
+slof_pz_a_4     byte    %8.0g                 
+slof_pz_a_5     byte    %8.0g                 
+slof_pz_b_6     byte    %8.0g                 
+slof_pz_b_7     byte    %8.0g                 
+slof_pz_b_8     byte    %8.0g                 
+slof_pz_b_9     byte    %8.0g                 
+slof_pz_b_10    byte    %8.0g                 
+slof_pz_b_11    byte    %8.0g                 
+slof_pz_b_12    byte    %8.0g                 
+slof_pz_d_20    byte    %8.0g                 
+slof_pz_d_21    byte    %8.0g                 
+slof_pz_d_22    byte    %8.0g                 
+slof_pz_d_23    byte    %8.0g                 
+slof_pz_d_24    byte    %8.0g                 
+slof_pz_d_25    byte    %8.0g                 
+slof_pz_d_26    byte    %8.0g                 
+slof_cg_c_13    byte    %8.0g                 
+slof_cg_c_14    byte    %8.0g                 
+slof_cg_c_15    byte    %8.0g                 
+slof_cg_c_16    byte    %8.0g                 
+slof_cg_c_17    byte    %8.0g                 
+slof_cg_c_18    byte    %8.0g                 
+slof_cg_c_19    byte    %8.0g                 
+slof_cg_e_27    byte    %8.0g                 
+slof_cg_e_28    byte    %8.0g                 
+slof_cg_e_29    byte    %8.0g                 
+slof_cg_e_30    byte    %8.0g                 
+slof_cg_e_31    byte    %8.0g                 
+slof_cg_e_32    byte    %8.0g                 
+slof_cg_e_33    byte    %8.0g                 
+slof_cg_e_34    byte    %8.0g                 
+slof_cg_e_35    byte    %8.0g                 
+slof_cg_e_36    byte    %8.0g                 
+slof_cg_e_37    byte    %8.0g                 
+slof_cg_f_38    byte    %8.0g                 
+slof_cg_f_39    byte    %8.0g                 
+slof_cg_f_40    byte    %8.0g                 
+slof_cg_f_41    byte    %8.0g                 
+slof_cg_f_42    byte    %8.0g                 
+slof_cg_f_43    byte    %8.0g                 
+cga             byte    %8.0g                 Total score by caregivers on SLOF dimension a
+cgb             byte    %8.0g                 Total score by caregivers on SLOF dimension b
+cgc             byte    %8.0g                 Total score by caregivers on SLOF dimension c
+cgd             byte    %8.0g                 Total score by caregivers on SLOF dimension d
+cge             byte    %8.0g                 Total score by caregivers on SLOF dimension e
+cgf             byte    %8.0g                 Total score by caregivers on SLOF dimension f
+slof_cg_a_1     byte    %8.0g                 
+slof_cg_a_2     byte    %8.0g                 
+slof_cg_a_3     byte    %8.0g                 
+slof_cg_a_4     byte    %8.0g                 
+slof_cg_a_5     byte    %8.0g                 
+slof_cg_b_6     byte    %8.0g                 
+slof_cg_b_7     byte    %8.0g                 
+slof_cg_b_8     byte    %8.0g                 
+slof_cg_b_9     byte    %8.0g                 
+slof_cg_b_10    byte    %8.0g                 
+slof_cg_b_11    byte    %8.0g                 
+slof_cg_b_12    byte    %8.0g                 
+slof_cg_d_20    byte    %8.0g                 
+slof_cg_d_21    byte    %8.0g                 
+slof_cg_d_22    byte    %8.0g                 
+slof_cg_d_23    byte    %8.0g                 
+slof_cg_d_24    byte    %8.0g                 
+slof_cg_d_25    byte    %8.0g                 
+slof_cg_d_26    byte    %8.0g                 
+data_recl       float   %td..                 
+scolarita       byte    %8.0g                 
+ricovero_corr~e byte    %8.0g                 
+FEIT            byte    %8.0g                 
+TASIT1          byte    %8.0g                 
+TASIT2          byte    %8.0g                 
+TASIT3          byte    %8.0g                 
+BNSS_apa        float   %9.0g                 Apathy at follow-up
+BNSS_app        float   %9.0g                 Blunted affect at follow-up
+Centro          long    %8.0g      Centro     
+MSCEITME        int     %10.0g                MSCEIT ME
+females         float   %9.0g                 
+TMT_inv         float   %9.0g                 
+proc_sp         float   %9.0g                 
+wrk_mem         float   %9.0g                 
+relatives       float   %9.0g                 
+healthop        float   %9.0g                 
+clinicians      float   %9.0g                 
+diff_a          float   %9.0g                 Patient-caregiver difference on SLOF dimension a
+mean_a          float   %9.0g                 Mean of Patient and caregiver scores on SLOF dimension a
+diff_b          float   %9.0g                 Patient-caregiver difference on SLOF dimension b
+mean_b          float   %9.0g                 Mean of Patient and caregiver scores on SLOF dimension b
+diff_c          float   %9.0g                 Patient-caregiver difference on SLOF dimension c
+mean_c          float   %9.0g                 Mean of Patient and caregiver scores on SLOF dimension c
+diff_d          float   %9.0g                 Patient-caregiver difference on SLOF dimension d
+mean_d          float   %9.0g                 Mean of Patient and caregiver scores on SLOF dimension d
+diff_e          float   %9.0g                 Patient-caregiver difference on SLOF dimension e
+mean_e          float   %9.0g                 Mean of Patient and caregiver scores on SLOF dimension e
+diff_f          float   %9.0g                 Patient-caregiver difference on SLOF dimension f
+mean_f          float   %9.0g                 Mean of Patient and caregiver scores on SLOF dimension f
+-------------------------------------------------------------------------------------------------------------
+Sorted by: Soggetto
+     Note: Dataset has changed since last saved.
+
+. log close
+      name:  <unnamed>
+       log:  /Users/dinogibertoni/WORK/NIRP/FOLLOW-UP/SLOF pazienti-caregivers/codebook.log
+  log type:  text
+ closed on:  16 Feb 2021, 17:52:00
+-------------------------------------------------------------------------------------------------------------
