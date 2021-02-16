@@ -1,8 +1,8 @@
 ********************************************************************************
 *
-*   Stata script used for the paper
+*   Stata script used for the paper:
 *   "Accuracy of self-assessment of real-life functioning in schizophrenia: evidence from the Italian Network for Research on Psychoses"
-*   (to be) published on npj Schizophrenia
+*   published on npj Schizophrenia (https://www.nature.com/articles/s41537-021-00140-9)
 *
 *   2020-21 Dino Gibertoni, Department of Biomedical and Neuromotor Sciences, University of Bologna
 *   dino.gibertoni2@unibo.it   dgibertoni@gmail.com
@@ -13,14 +13,14 @@
 
 
 clear all
-
-tempfile cg itemsABD MSCEIT
      
 **** DATA LOADING
 *** Given the way that data was recorded and distributed in the NIRP project, 
 ***   we had to load data from multiple datasets, as explained in the a. b. c. and d. steps
-*** Thus, the above-mentioned steps, and the e. step (merging) aren't necessary per se, 
-***   but we had load datasets from different sources in order to obtain the variables of interests.
+*** Thus, the above-mentioned steps, and the e. step (merging) aren't necessary per se.
+*** To carry out the analyses, users should prepare a dataset able to reproduce commands from line 126 onwards.
+
+tempfile cg itemsABD MSCEIT
 
 *** a. import the dataset where the type of caregiver was recorded
 import excel "/Users/dinogibertoni/WORK/NIRP/dati/WAVE 2/2020-05-slof-CG.xlsx", sheet("Foglio1") firstrow clear
