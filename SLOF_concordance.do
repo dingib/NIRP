@@ -19,6 +19,7 @@ clear all
 ***   we had to load data from multiple datasets, as explained in the a. b. c. and d. steps
 *** Thus, the above-mentioned steps, and the e. step (merging) aren't necessary per se.
 *** To carry out the analyses, users should prepare a dataset able to reproduce commands from line 126 onwards.
+*** Please refer to the dataset structure described in the codebook.log file
 
 tempfile cg itemsABD MSCEIT
 
